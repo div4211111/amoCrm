@@ -1,0 +1,130 @@
+.header {
+  padding: 0 15px;
+}
+.headerLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerTitle {
+  max-width: 140px;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--light-text);
+}
+.header a {
+  color: var(--light-text);
+  font-weight: 500;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+}
+
+.headerLogo {
+  display: flex;
+  flex-direction: column;
+  max-width: 140px;
+}
+
+.headerNavList {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.headerNavItem a:hover {
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.headerSocials {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.headerSocials a:hover svg path {
+  fill: var(--light-gray);
+}
+.headerSocials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1050px) {
+  .headerLeft {
+    gap: 20px;
+  }
+  .headerRight {
+    gap: 20px;
+  }
+  .headerSocials {
+    gap: 10px;
+  }
+  .headerNavList {
+    gap: 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 860px) {
+  .headerLeft {
+    gap: 10px;
+  }
+  .headerRight {
+    gap: 10px;
+  }
+  .headerSocials {
+    gap: 5px;
+  }
+  .headerNavList {
+    gap: 5px;
+  }
+  .headerPhone {
+    display: none;
+  }
+  .headerNavList {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--background-color);
+    padding: 20px 16px;
+    z-index: 5;
+  }
+  .headerTitle {
+    display: none;
+  }
+  .headerLogo {
+    display: none;
+  }
+  .headerRight {
+    display: none;
+  }
+  .headerNavList {
+    gap: 16px;
+    font-size: 12px;
+  }
+  .headerNavItem:last-child {
+    display: none;
+  }
+  .headerLine {
+    justify-content: center;
+  }
+}

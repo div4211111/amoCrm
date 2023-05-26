@@ -1,0 +1,117 @@
+.footer {
+  padding: 45px 16px 60px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerSectionTitle {
+  color: var(--light-gray);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+.footerSectionContent {
+  display: flex;
+  gap: 50px;
+}
+.footerSectionContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footerSectionList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerSectionListItem a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--light-text);
+}
+.footerSectionListItem:hover a {
+  text-decoration: underline;
+}
+.footerPhone {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--light-text);
+}
+.footerPhone:hover {
+  text-decoration: underline;
+}
+
+.footerSocials {
+  display: flex;
+  gap: 10px;
+}
+
+.footerSocials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerSocials a:hover svg path {
+  fill: var(--light-gray);
+}
+.footerSocials a svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footerAddress {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footerRools {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 50px;
+}
+
+.footerRools a {
+  color: var(--light-text);
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .footerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footerRools {
+    align-self: flex-end;
+  }
+  .footerSection:last-child {
+    text-align: right;
+  }
+  .footerSocials {
+    justify-content: flex-end;
+  }
+  .footerSocials a svg {
+    width: 20px;
+    height: 20px;
+  }
+}

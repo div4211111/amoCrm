@@ -1,0 +1,143 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-top: 57px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-top: 90px;
+}
+.title {
+  max-width: 362px;
+}
+.title h1 {
+  font-size: 48px;
+  line-height: 58px;
+}
+.title span {
+  display: block;
+  font-weight: 700;
+}
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  max-width: 275px;
+  margin-top: 30px;
+}
+
+.accentText {
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.info {
+  max-width: 300px;
+  text-align: right;
+}
+
+.infoTitle {
+  font-size: 18px;
+}
+.infoTitle span {
+  text-transform: uppercase;
+}
+.infoList {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+.infoItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoItemTitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+.infoItemText {
+  font-family: "Montserrat";
+  line-height: 20px;
+  margin-top: 6px;
+}
+.infoButton {
+  padding: 20px 35px;
+  background: var(--accent-three);
+  font-weight: 500;
+  margin-top: 60px;
+}
+.infoButton:hover {
+  opacity: 0.8;
+}
+.infoListMobile {
+  display: none;
+}
+.infoItemMobile {
+  position: relative;
+  padding-left: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+}
+.infoItemMobile::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  background: var(--gradient);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, 50%);
+}
+
+@media (max-width: 768px) {
+  .content {
+    background-image: var(--background-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    flex-direction: column;
+    gap: 45px;
+  }
+  .title {
+    max-width: 100%;
+  }
+  .title h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .subtitle {
+    max-width: 100%;
+  }
+  .info {
+    text-align: left;
+  }
+  .infoTitle span {
+    text-transform: lowercase;
+  }
+  .infoList {
+    display: none;
+  }
+  .infoButton {
+    display: none;
+  }
+  .infoListMobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 15px;
+    column-gap: 10px;
+    margin-top: 20px;
+  }
+}
