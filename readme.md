@@ -28,4 +28,4 @@ npm run dev
 This will start the development server, and you can view the project by opening a web browser and navigating to `http://localhost:5173`.
 
 Demo
-You can see a demo of this project at amo-crm-seven.vercel.app.
+You can see a demo of this project at https://amo-crm-seven.vercel.app/.
